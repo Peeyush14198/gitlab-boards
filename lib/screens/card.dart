@@ -9,7 +9,7 @@ class DisplayCard extends StatelessWidget {
   final int indexOfCard;
   final int boardNo;
   final CardEntity cardEntity;
-  const DisplayCard(
+  DisplayCard(
       {Key? key,
       required this.cardEntity,
       required this.indexOfCard,
