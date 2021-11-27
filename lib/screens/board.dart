@@ -11,7 +11,7 @@ class Board extends StatelessWidget {
   final int boardNo;
   final List<CardEntity> boardList;
   final ScrollController scrollController;
-  const Board(
+  Board(
       {Key? key,
       required this.boardNo,
       required this.boardList,
