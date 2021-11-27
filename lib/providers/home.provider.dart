@@ -4,10 +4,6 @@ import 'package:random_string/random_string.dart';
 import 'package:uuid/uuid.dart';
 
 class HomeProvider extends ChangeNotifier {
-  ScrollController board1Controller = ScrollController();
-  ScrollController board2Controller = ScrollController();
-  ScrollController board3Controller = ScrollController();
-
   List<CardEntity> board1 = [
     CardEntity(
         uid: const Uuid().v1(),
@@ -87,6 +83,7 @@ class HomeProvider extends ChangeNotifier {
   }
 
   void verticalDragMaterial(int boardNo, CardEntity entity) {
+    print('This is called');
     if (boardNo == 1) {
       if (!board1.contains(entity)) {
         board1.add(entity);

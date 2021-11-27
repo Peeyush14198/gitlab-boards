@@ -25,7 +25,10 @@ class Board extends StatelessWidget {
       width: 300,
       child: DragTarget(onWillAccept: (data) {
         return true;
+      }, onAcceptWithDetails: (data) {
+        print('On accept with details $data');
       }, onAccept: (data) {
+        print('This is the on accept $data');
         context
             .read<HomeProvider>()
             .verticalDragMaterial(boardNo, data as CardEntity);

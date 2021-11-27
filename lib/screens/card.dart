@@ -39,7 +39,7 @@ class DisplayCard extends StatelessWidget {
   Widget _cardWhenDragging(BuildContext context) {
     return Material(
       child: Container(
-        width: MediaQuery.of(context).size.width / 1.8,
+        width: 200,
         height: 200,
         decoration: const BoxDecoration(
             color: Colors.white,
